@@ -45,3 +45,8 @@ if good_im < 50
 end
 % Generate the mask showing the debug information
 [mask,p] = mask_detect(imdb,1);
+
+% Save the mask
+filename = sprintf('mask_%s',FileName{1});
+imwrite(mask,filename);
+fprintf('The mask file was saved as %s\n',filename);
