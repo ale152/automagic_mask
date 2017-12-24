@@ -1,6 +1,9 @@
 # Automated mask generation for PIV image analysis based on pixel intensity statistics
 This matlab script was generated based on the paper ["Automated mask generation for PIV image analysis based on pixel intensity statistics"](https://link.springer.com/article/10.1007/s00348-017-2357-3) from Masullo and Theunissen.
 
+![alt text](mask.png)
+
+
 Use the script *run.m* to load the images into memory and automatically find the mask. The method implemented in this code is slightly different from the one described in the paper. While the probability matrix is generated in the same way, the thresholding is performed using k-means rather than Otsu's threshold. This function requires the *Statistics and Machine Learning Toolbox*.
 
 Please reference this paper if used in your work:
