@@ -3,8 +3,6 @@ imdir = '\my_image_path\';
 imname = 'A_%05d_a.tif';
 range = [1 600];
 
-[imdir,imname,range] = read_images(9);
-
 % Number of images
 Nim = range(2)-range(1)+1;
 
